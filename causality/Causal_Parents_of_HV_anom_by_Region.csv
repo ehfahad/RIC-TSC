@@ -1,0 +1,8 @@
+Region,CausalParents
+ALL,HV.anom:-1|-2|-3|-4|-5|-7;S2.water:0|-1|-2;r-dummy:0
+CW,HV.anom:-1|-2|-3|-4;S2.water:0;r2:0
+NE,HV.anom:-1|-2|-3|-4|-5;t-dummy:0
+NO,HV.anom:-1|-2|-3|-4|-7;LS.water:0;S2.water:0
+NW,HV.anom:-1|-2|-3|-4|-7;s-dummy:0;LS.water:0;S2.water:0;sst:0
+SE,HV.anom:-1|-2|-3|-4;LS.water:0
+SW,HV.anom:-1|-2|-3|-4;S2.water:0;LS.water:0;t-dummy:0

@@ -1,0 +1,77 @@
+# RIC-TSC Dataset Download Instructions
+
+This repository does not include large datasets due to GitHub’s file size limitations. To reproduce the experiments in this work, you must manually download and extract the required files into the `data/` directory.
+
+---
+
+## 1. Required Files and Folders
+
+You will need the following data to run the complete pipeline:
+
+### A. Core Dataset Files
+
+- **CARRA_GrIS_Dataset.nc**  
+  - Format: NetCDF  
+  - Description: Daily gridded climate variables (e.g., temperature, pressure, humidity) from the CARRA reanalysis over Greenland.
+
+- **all_lakes_2019_LS.nc**  
+  - Format: NetCDF  
+  - Description: Optical-derived lake features (e.g., water fraction, zenith angle) extracted from Landsat-8 and Sentinel-2 imagery for all 2019 lakes.
+
+- **GrIS_lakes.geojson**  
+  - Format: GeoJSON  
+  - Description: Vector polygon outlines for all supraglacial lakes across Greenland. Derived from the Greenland supraglacial lake inventory (see publication for details).
+
+### B. Processed Folders (Required for Running Experiments)
+
+- **processed/**  
+  - Contains preprocessed 365-day time series (e.g., `all_lakes_timeseries.csv`, region-specific lake folders).  
+  - Output of the `preprocessing.py` script, but included for convenience.
+
+- **region_causal_datasets/**  
+  - Contains region-specific subsets of causal predictors extracted using J-PCMCI+.  
+  - Output of `generate_causal_datasets.py`, already prepared for use in classification.
+
+---
+
+## 2. Download Link
+
+All of the above files and folders are bundled and hosted via Zenodo.
+
+🔗 **Zenodo DOI:** *[To be added after upload]*
+
+---
+
+## 3. Directory Placement Instructions
+
+After downloading the Zenodo archive:
+
+1. Extract the archive.
+2. Place its contents inside the repository’s `data/` directory.  
+   Your structure should now look like this:
+
+data/
+├── CARRA_GrIS_Dataset.nc
+├── all_lakes_2019_LS.nc
+├── GrIS_lakes.geojson
+├── processed/
+└── region_causal_datasets/
+
+
+
+⚠️ Do not rename or modify the filenames or folder names — the scripts expect these to match exactly.
+
+---
+
+## 4. Data Source Citation
+
+Please cite the following source if you use this dataset:
+
+- Schyberg H., Yang X., Køltzow M.A.Ø., Amstrup B., Bakketun Å., Bazile E., Bojarova J., Box J. E., Dahlgren P., Hagelin S., Homleid M., Horányi A., Høyer J., Johansson Å., Killie M.A., Körnich H., Le Moigne P., Lindskog M., Manninen T., Nielsen Englyst P., Nielsen K.P., Olsson E., Palmason B., Peralta Aros C., Randriamampianina R., Samuelsson P., Stappers R., Støylen E., Thorsteinsson S., Valkonen T., Wang Z.Q. (2020).  
+  *Arctic regional reanalysis on single levels from 1991 to present.* Copernicus Climate Change Service (C3S) Climate Data Store (CDS).  
+  https://doi.org/10.24381/cds.713858f6
+
+---
+
+If you have any issues accessing the dataset or reproducing the structure, feel free to open an issue on the GitHub repository.
+
