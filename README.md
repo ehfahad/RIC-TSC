@@ -1,6 +1,6 @@
 # RIC-TSC: Causal Time Series Modeling of Supraglacial Lake Evolution in Greenland under Distribution Shift
 
-This repository provides the implementation for **"Causal Time Series Modeling of Supraglacial Lake Evolution in Greenland under Distribution Shift"**, a submitted paper to ACM SIGSPATIAL 2025. We introduce a regionally-informed causal framework that discovers lagged environmental drivers of supraglacial lake (SGL) evolution across Greenland and uses these causal signals for robust sequence modeling under spatial distribution shift.
+This repository provides the implementation for **"Causal Time Series Modeling of Supraglacial Lake Evolution in Greenland under Distribution Shift"**, an accepted paper to ICMLA 2025. We introduce a regionally-informed causal framework that discovers lagged environmental drivers of supraglacial lake (SGL) evolution across Greenland and uses these causal signals for robust sequence modeling under spatial distribution shift.
 
 ---
 ## Introduction
@@ -125,7 +125,7 @@ This work is under submission. Please cite as:
   title={Causal Time Series Modeling of Supraglacial Lake Evolution in Greenland under Distribution Shift},
   author={Emam Hossain and Muhammad Hasan Ferdous and Devon Dunmire and Aneesh Subramanian and Md Osman Gani},
   year={2025},
-  note={Manuscript under review at ACM SIGSPATIAL 2025}
+  note={Accepted for publication in 2025 International Conference on Machine Learning and Applications (ICMLA)}
 }
 ```
 
